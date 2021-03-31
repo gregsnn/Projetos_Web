@@ -1,0 +1,30 @@
+#home {
+	background: grey;
+	color: whitesmoke;
+}
+
+.caixa {
+	padding: 60px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+footer p a {
+	margin: 5px 15px;
+}
+
+header .navbar {
+	background-color: grey;
+}
+
+header ul li a{
+	color: white !important;
+}
+
+header ul li a:hover {
+	color: black !important;
+}
+
+header ul li .btn {
+	background-color: rgba(109, 109, 109, 0.686);
+	color: black;
+}
