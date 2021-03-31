@@ -1,0 +1,303 @@
+/* Layout
+-----------------------------*/
+html, body, #home {
+	height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+body {
+	background: url(../img/capa.png), url(../img/ruido.png), linear-gradient(50deg,#ff4169,#7c26f8);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+	#home h1 {
+		font-size: 1.6em;
+	}
+	#home .btn {
+		font-size: 0.3em;
+	}
+	#servicos h2 {
+		font-size: 1.8em;
+	}
+
+	/*footer*/
+	.brand-foot img{
+		width: 8em;
+		padding: 0 0 20px 0;
+	}
+	.img-foot img {
+		width: 3em;
+	}
+	.nav-foot {
+		padding-bottom: 10px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	#home h1 {
+		font-size: 3em;
+	}
+	#home .btn {
+		font-size: 0.9em;
+	}
+	#servicos h2 {
+		font-size: 2.5em;
+	}
+
+	/*footer*/
+	.brand-foot img{
+		width: 8em;
+		padding: 0 0 20px 0;
+	}
+	.img-foot img {
+		width: 3em;
+	}
+	.nav-foot {
+		padding-bottom: 20px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	#home h1 {
+		font-size: 4em;
+	}
+	#home .btn {
+		font-size: 0.9em;
+	}
+	#servicos h2 {
+		font-size: 1.9em;
+	}
+
+	/*footer*/
+	.brand-foot img{
+		width: 8em;
+		padding: 0 20px 0 0;
+	}
+	.img-foot img {
+		width: 3em;
+	}
+	.nav-foot {
+		padding-bottom: 20px;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	#home h1 {
+		font-size: 5em;
+	}
+	#servicos h2 {
+		font-size: 2em;
+	}
+
+	/*footer*/
+	.brand-foot img{
+		width: 8em;
+	}
+	.img-foot img {
+		width: 3.2em;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+	#home h1 {
+		font-size: 6em;
+	}
+	#servicos h2 {
+		font-size: 3em;
+	}
+
+	/*footer*/
+	.brand-foot img{
+		width: 10em;
+	}
+	.img-foot img {
+		width: 3.6em;
+	}
+}
+
+/* Barra de navegação
+-----------------------------*/
+nav.navbar-transparente {
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #9bf0e1;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(255,255,255,.5);
+    border-color: transparent;
+}
+
+.divisor {
+	width: 1px;
+	background: white;
+	margin: 12px 15px;
+}
+
+/* Capa
+-----------------------------*/
+.capa {
+	text-align: center;
+}
+
+.btn i {
+	padding-right: 2px;
+}
+
+.btn-custom {
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+	font-size: 13px;
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+    padding: 10px 20px;
+}
+
+.btn-green {
+	background: #1cb854;
+	padding: 12px 30px;
+}
+
+.btn-green:hover {
+	background: #179e49;
+	color: white;
+	text-shadow: 1px 1px 3px black;
+}
+
+.btn-white {
+	border: 2px solid white;
+}
+
+.btn-white:hover {
+	background-color: white;
+	color: black;
+}
+
+.carousel-control-next, .carousel-control-prev {
+	width: 5%;
+}
+
+/* Estrutura conteúdos
+-----------------------------*/
+.caixa {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#servicos {
+	background: white;
+}
+
+#recursos {
+	color: white;
+}
+
+#servicos h2, h3 {
+	color: #1cb854;
+}
+
+#recursos h2 {
+	color: white;
+}
+
+#recursos h3 {
+	color: #9bf0e1;
+}
+
+.albuns {
+	padding: 10px 0;
+}
+
+.rotacionar {
+	-ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+    transform: rotate(30deg);
+	padding-left: 80px;
+}
+
+/* Rodapé
+-----------------------------*/
+footer {
+	background: #000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+footer h4 {
+	color: #1cb854;
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+footer .navbar-nav a {
+	color: white;
+	font-size: 0.8em;
+	text-decoration: none;
+}
+
+footer .navbar-nav a:hover {
+	color: #9bf0e1;
+	text-decoration: none;
+}
+
+footer ul {
+	list-style: none;
+}
+
+footer ul li {
+	float: right;
+	margin: 0 5px;
+}
+
+/* Tipografia
+-----------------------------*/
+.carousel-item h1 {
+	font-size: 700;
+	font-family: monospace;
+	font-style: italic;
+	text-shadow: -3px 2.5px 3px green, 2px 2px 5px rgb(67, 66, 66);
+}
+h1 {
+	font-weight: 900;
+	letter-spacing: -0.03em;
+	margin-bottom: 50px;
+	color: whitesmoke;
+}
+
+h2 {
+	font-size: 3em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#home #carousel-spotify a {
+	text-decoration: none;
+}
