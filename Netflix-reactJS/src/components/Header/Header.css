@@ -1,16 +1,16 @@
-header {
-    position: fixed;
-    z-index: 999;
+header {                                            
+    position:fixed;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     height: 70px;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 13px;
+    padding: 0 15px;
     background: transparent;
-    transition: all ease 0.3s;
+    transition: all ease 0.2s;
 }
 
 header.black {
@@ -18,17 +18,23 @@ header.black {
 }
 
 .header--logo {
-    height: 9rem;
+    height: 110px;
 }
 .header--logo img {
     height: 100%;
 }
 
 .header--user {
-    height: 4rem;
+    height: 50px;
     padding-right: 20px;
 }
 
 .header--user img {
     height: 100%;
+}
+
+@media (max-width: 576px) {
+    header {
+        position: absolute;
+    }
 }

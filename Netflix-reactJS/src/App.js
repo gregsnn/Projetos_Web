@@ -33,7 +33,7 @@ export default () => {
 
   useEffect(()=>{
     const scrollListener = () => {
-      if(window.scrollY > 500) {
+      if(window.scrollY > 100) {
         setBlackHeader(true)
       } else {
         setBlackHeader(false)
@@ -63,6 +63,12 @@ export default () => {
         <p className="netflix">All Rights Reserved for <a href="https://www.netflix.com/br-en/">Netflix</a></p>
         <p className="tmdb">Data acquired by <a href="https://www.themoviedb.org/">The Movie Database</a> <sup>(TMDB)</sup></p>
       </footer>
+
+      {movieList.length  <= 0 && 
+        <div className="loading">
+            <img src="https://media.wired.com/photos/592744d3f3e2356fd800bf00/master/w_2560%2Cc_limit/Netflix_LoadTime.gif" alt="loading" width="500"/>
+        </div>
+      }
     </div>
   )
 }

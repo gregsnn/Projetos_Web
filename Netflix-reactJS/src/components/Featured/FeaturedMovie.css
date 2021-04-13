@@ -17,22 +17,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 70px 0 150px 35px;
+    padding: 70px 0 130px 35px;
 }
 
 .featured--name {
-    font-size: 4em;
+    font-size: 3.5em;
     font-weight: bold;
 }
 
 .featured--info {
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: bold;
     margin-top: 12px;
 }
 
 .featured--points, .featured--year, .featured--seasons {
-    font-size: 1.2em;
+    font-size: 1.1em;
     display: inline-block;
     margin-right: 15px;
 }
@@ -61,7 +61,7 @@
 }
 .featured--watchbutton, .featured--mylist {
     text-align: center;
-    font-size: 0.9m;
+    font-size: 1m;
     font-weight: bold;    
     text-decoration: none;
     height: fit-content;
@@ -93,4 +93,27 @@
     font-size: 1em;
     color: #999;
     font-weight: normal;
+}
+
+@media (max-width:576px) {
+    .featured {
+        height: 100vh
+    }
+    .featured--name {
+        font-size: 1.3em;
+    }
+    .featured--info {
+        font-size: 0.8em;
+    }
+    .featured--description {
+        font-size: 0.8em !important;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+    .featured--buttons {
+        font-size: 1em;
+    }
+    .featured--genres {
+        font-size: 0.9em;
+    }
 }
