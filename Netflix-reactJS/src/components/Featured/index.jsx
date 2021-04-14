@@ -15,8 +15,9 @@ export default ({item}) => {
     averageVote = ((averageVote) * 10.0);
 
     let lengthOverview = item.overview;
-    let length = 250;
-    lengthOverview = lengthOverview.length > length ? lengthOverview.substring(0, length - 3) + "..." : lengthOverview
+    if(lengthOverview.length > 250) {
+        lengthOverview = lengthOverview.substring(0, 250 - 3)+"..."
+    }
 
     return (
         <section className="featured" style={{backgroundImage: `url(https://image.tmdb.org/t/p/original${item.backdrop_path})`}}>
